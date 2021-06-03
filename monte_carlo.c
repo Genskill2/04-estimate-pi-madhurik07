@@ -53,7 +53,7 @@ float mc_pi(int n) {
     }
   }
   points_in_square=points_in_square+points_out_circle;
-  float ratio=points_in_circle/points_in_square;
+  float ratio=(float)points_in_circle/points_in_square;
   return ratio*4;
 }
 
