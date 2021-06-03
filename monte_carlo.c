@@ -43,9 +43,9 @@ float mc_pi(int n) {
   int points_out_circle=0;
   int points_in_square=0;
   for(int c=1;c<=n;c++){
-    float a=frandom();
-    float b=frandom();
-    if ((a*a)+(b*b)<=1) {
+    float x=frandom();
+    float y=frandom();
+    if (sqrt((x*x)+(y*y))<=1) {
       points_in_circle+=1;
     }
     else {
@@ -56,5 +56,3 @@ float mc_pi(int n) {
   float ratio=(float)points_in_circle/points_in_square;
   return (ratio*4);
 }
-
-
