@@ -50,3 +50,4 @@ float mc_pi(int n) {
   float ratio=4*points_in_circle/n;
   return ratio;
 }
+
