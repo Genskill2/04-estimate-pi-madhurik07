@@ -45,7 +45,7 @@ float mc_pi(int n) {
   for(int i=1;i<=n;i++){
     float x=frandom();
     float y=frandom();
-    if ((x*x)+(y*y)<=1) {
+    if ((x*x)+(y*y)<=1.0) {
       points_in_circle+=1;
     }
     else {
