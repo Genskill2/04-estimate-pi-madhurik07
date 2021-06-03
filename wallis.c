@@ -23,4 +23,10 @@ int main(void) {
     }
   }
 }
-
+float wallis_pi(int n) {
+  float product=1;
+  for(int i=1;i<=n;i++) {
+    product=product*(((2*i)/((2*i)-1))*((2*i)/((2*i)+1)));
+  }
+  return product*2;
+}
